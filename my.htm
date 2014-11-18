@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="Author" content="Gerard Ferrandez at http://www.dhteumeuleu.com/">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="hiltonwei at http://hiltonwei.github.io/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="true">
 <meta name="msvalidate.01" content="B6C713C1F4E407129EDEF7810A8B9BCB">
-<meta name="description" content="看。">
 <meta name="keywords" content="canvas,3D,perspective,texturing,gallery">
 <link rel="stylesheet" href="./js/slider-wb.css">
 <link rel="shortcut icon" href="...">
-<title>程序员给女朋友的3D相册</title>
+<link rel="icon" href="_img/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="_img/favicon.ico" type="image/x-icon" />
+<title>方洁星&魏学士</title>
 <style>
 html {
 	overflow: hidden;
@@ -48,6 +50,7 @@ body {
  * http://www.dhteumeuleu.com/LICENSE.html
  * Last updated: 12 Dec 2012
  * ===============================================================
+ * 源码来源：http://www.dhteumeuleu.com/in-second-lives 向作者致敬
  */
 
 "use strict";
@@ -268,31 +271,27 @@ body {
 	return {
 		// --- load data ----
 		load : function (data) {
-			
-			ge1doot.loadJS(
-					"imageTransform3D.js",
-					init, data
-				);
+		ge1doot.loadJS("js/imageTransform3D.js",init, data);
 		}
 	}
 })().load({
 	imgdata:[
 		// north
-		{img:'1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
-		{img:'2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
-		{img:'3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		{img:'_img/1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'_img/2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'_img/3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
 		// east
-		{img:'4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
-		{img:'5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
-		{img:'6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		{img:'_img/4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'_img/5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'_img/6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'_img/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'_img/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'_img/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
-		{img:'10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
-		{img:'11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
-		{img:'12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+		{img:'_img/10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'_img/11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'_img/12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
 	],
 	structure:[
 		{
@@ -406,7 +405,7 @@ body {
 			</ul></div>
 			<div class="nav-off">
 				<div id="icon"><div></div><div></div></div>
-				<h1 class="title">程序员给女朋友的礼物<br>HTML5 3D相册</h1>
+				<h1 class="title">The Love</h1>
 			</div>
 		</div>
 	</label>
@@ -474,12 +473,6 @@ body {
 </div>
 <script src="./js/jquery-1.7.2.min.js"></script>
 <script src="./js/util.js"></script>
-<a style="display:none" href="http://www.webhek.com/">webhek</a> 
+<a style="display:none" href="http://hiltonwei.github.io/">魏师傅</a> 
 <script src="./js/ga.js"></script>
-
-
-<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
-
-Page Caching using disk
-
- Served from: www.webhek.com @ 2014-07-14 17:05:43 by W3 Total Cache --></body></html>
+</body></html>
