@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="Author" content="hiltonwei at http://hiltonwei.github.io/">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="Gerard Ferrandez at http://www.dhteumeuleu.com/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +8,8 @@
 <meta name="msvalidate.01" content="B6C713C1F4E407129EDEF7810A8B9BCB">
 <meta name="keywords" content="canvas,3D,perspective,texturing,gallery">
 <link rel="stylesheet" href="./js/slider-wb.css">
-<link rel="icon" href="./_img/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="./_img/favicon.ico" type="image/x-icon" />
-<title>方洁星*魏学士</title>
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>方洁星&魏学士</title>
 <style>
 html {
 	overflow: hidden;
@@ -33,8 +31,6 @@ body {
 	background: #fff;
 }
 </style>
-<script async="" type="text/javascript" src="./js/ca-pub-9195052014444206.js"></script>
-<script async="" src="./js/analytics.js"></script>
 <script src="./js/ge1doot.js"></script>
 <script>
 /* 
@@ -42,14 +38,8 @@ body {
  * CANVAS 3D experiment - 
  * http://www.dhteumeuleu.com/
  * Author Gerard Ferrandez - 7 June 2010
- * ------------------------------------------------------------
- * GFX: Vieeto Voom - http://www.flickr.com/photos/vieeto_voom/
- * ------------------------------------------------------------
- * Javascript released under the MIT license
- * http://www.dhteumeuleu.com/LICENSE.html
- * Last updated: 12 Dec 2012
+
  * ===============================================================
- * 源码来源：http://www.dhteumeuleu.com/in-second-lives 向作者致敬
  */
 
 "use strict";
@@ -270,7 +260,11 @@ body {
 	return {
 		// --- load data ----
 		load : function (data) {
-		ge1doot.loadJS("./js/imageTransform3D.js",init, data);
+			
+			ge1doot.loadJS(
+					"imageTransform3D.js",
+					init, data
+				);
 		}
 	}
 })().load({
@@ -284,10 +278,9 @@ body {
 		{img:'5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
 		{img:'6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'https://raw.githubusercontent.com/HiltonWei/hiltonwei.github.io/master/_img/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'https://github.com/HiltonWei/hiltonwei.github.io/raw/master/_img/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'http://www.baidu.com/img/bdlogo.gif',x:-1000,y:0,z:-1500,nx:0,nz:-1},
-		//{img:'https://github.com/HiltonWei/hiltonwei.github.io/blob/master/_img/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
 		{img:'10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
 		{img:'11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
@@ -383,7 +376,7 @@ body {
 		}
 	],
 	options:{
-		imagesPath: "./_img/"
+		imagesPath: "img/"
 	}
 });
 </script><script src="./js/imageTransform3D.js"></script>
@@ -405,7 +398,7 @@ body {
 			</ul></div>
 			<div class="nav-off">
 				<div id="icon"><div></div><div></div></div>
-				<h1 class="title">The Love</h1>
+				<h1 class="title">The Love of us</h1>
 			</div>
 		</div>
 	</label>
@@ -414,7 +407,7 @@ body {
 <div style="position: absolute; top: 20px; right: 20px;">    <style type="text/css">
 .Qg{height: 30px;width: 250px;}
 .iI {
-    background: url(/) no-repeat scroll 0px 0px rgba(0, 0, 0, 0);
+    background: url(/misc-res/images/share.png) no-repeat scroll 0px 0px rgba(0, 0, 0, 0);
     display: inline-block;
     height: 16px;
     margin-bottom: 3px;
@@ -471,8 +464,4 @@ body {
 <!-- 3d-album1 -->
 
 </div>
-<script src="./js/jquery-1.7.2.min.js"></script>
-<script src="./js/util.js"></script>
-<a style="display:none" href="http://hiltonwei.github.io/">魏师傅</a> 
-<script src="./js/ga.js"></script>
 </body></html>
