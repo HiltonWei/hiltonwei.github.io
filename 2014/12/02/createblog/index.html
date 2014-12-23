@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>快速创建Hexo博客 | wxuei</title>
+  <meta name="author" content="wxuei">
+  
+  <meta name="description" content="魏学士的个人博客">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="快速创建Hexo博客"/>
+  <meta property="og:site_name" content="wxuei"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.ico" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">wxuei</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> 快速创建Hexo博客</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+			
+
+	<!-- content -->
+	<div class="mypage">		
+	    <p>一直想弄个自己的Blog，终付诸于行动。</p>
+<h3 id="博客架构">博客架构</h3>
+<p><strong>hexo + Makedown + Github pages + Name.com(域名) + DnsPod（域名解析）</strong></p>
+<p><a id="more"></a></p>
+<h3 id="hexo">hexo</h3>
+<p>hexo是一个基于Node.js的静态博客程序，类似于jekyll、Octopress、Wordpress，快速生成静态网页并托管在github和Heroku上 ；作者是来自台湾的<a href="https://github.com/tommy351/hexo" target="_blank" rel="external">@tommy351</a>，特此感谢。</p>
+<h4 id="搭建环境">搭建环境</h4>
+<p>Windows 下快速配置：</p>
+<ol>
+<li><p>快速安装（特别推荐） 绿色安装包（包括Node.js,Npm,Git.—下载地址：<a href="http://pan.baidu.com/s/1c0cWgyW" target="_blank" rel="external">百度盘</a> <a href="http://url.cn/XeVZ5e" target="_blank" rel="external">微云</a>），只需解压，运行批处理,本地环境完成。完全替代了Git,Node.js,Hexo,npm的安装。 </p>
+<pre><code>文件哈希
+<span class="label">FileName:</span> \portable<span class="number">.7</span><span class="built_in">z</span>
+<span class="label">Size:</span> <span class="number">29658264</span> bytes
+<span class="label">Modified:</span> <span class="number">2014</span>-<span class="number">12</span>-<span class="number">01</span>, <span class="number">21</span>:<span class="number">59</span>:<span class="number">25</span>
+<span class="label">MD5:</span> <span class="number">0</span>A0016A2F41C34D521A301C4E6C0428A
+<span class="label">SHA1:</span> <span class="number">81</span>A296C0F867A3C3A2410E13338C53A6EA31B5B9
+<span class="label">CRC32:</span> EB36D839 
+</code></pre><ol>
+<li>自行选择Markdown编辑器，支持格式即可。 </li>
+</ol>
+</li>
+</ol>
+<h4 id="搭建博客">搭建博客</h4>
+<ol>
+<li>在本地任意文件夹下（ex.F:/hexo）,cmd 进入目录。（对 f:/hexo文件夹右击，如果有Git bash 也是可以的。）Hexo会在目标文件夹中建立网站所需文件。<br><code>hexo init  &lt;folder&gt;</code>  </li>
+<li>安装依赖<br><code>npm install</code> </li>
+<li>本地查看<br><code>hexo g</code><br><code>hexo s</code></li>
+<li>打开浏览器，<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></li>
+</ol>
+<h3 id="部署到Github">部署到Github</h3>
+<ul>
+<li><p>如果想用 your_github_name.github.io 作为本blog的域名：</p>
+<pre><code>  创建代码仓库，名称为your_github_name.github.<span class="built_in">io</span>
+</code></pre></li>
+<li><p>编辑_config.yml(在f:/hexo下),并将您的仓库url替换掉。  </p>
+<pre><code>  deploy:
+  <span class="built_in">type</span>: github
+  repository: git@github.com:HiltonWei/hiltonwei.github.<span class="built_in">io</span>.git
+  //注意 如果用 https://github.com/hiltonwei/hiltonwei.github.<span class="built_in">io</span>.git  ssh设置会失效
+  branch: master
+</code></pre></li>
+<li><p>完成部署</p>
+<pre><code>  <span class="title">hexo</span> g
+  hexo d
+</code></pre></li>
+<li><p><code>Tip:如果未设置ssh,需要输入用户名和密码（无*号提示）。</code></p>
+</li>
+</ul>
+<h3 id="设置ssh">设置ssh</h3>
+<ul>
+<li><p>配置</p>
+<pre><code>  git config --global <span class="literal">user</span>.email <span class="string">"wxuei@wxuei.com"</span>
+  git config --global <span class="literal">user</span>.name <span class="string">"hiltonwei"</span>
+</code></pre></li>
+<li><p>生成密钥 <code>ssh-keygen -t rsa -C &quot;wxuei@wxuei.com&quot;</code></p>
+<pre><code> F:<span class="command">\hexo</span>&gt;ssh-keygen -t rsa -C "wxuei@wxuei.com"
+ Generating public/private rsa key pair.
+ Enter file in which to save the key (//.ssh/id_rsa):  F:<span class="command">\hexo</span><span class="command">\ssh</span> 
+ //（F:<span class="command">\hexo</span><span class="command">\ssh</span> 选填，可以一路回车，默认在 c:<span class="command">\user</span><span class="command">\admin</span><span class="command">\.</span>ssh）
+ Enter passphrase (empty for no passphrase):
+ Enter same passphrase again:
+ Your identification has been saved in F:<span class="command">\hexo</span><span class="command">\ssh</span>.
+ Your public key has been saved in F:<span class="command">\hexo</span><span class="command">\ssh</span>.pub.
+ The key fingerprint is:
+ 11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11 wxuei@wxuei.com
+</code></pre></li>
+</ul>
+<p><code>bug:输入路径必须包含文件名。（f:\hexo 为路径，ssh为文件名）</code></p>
+<ul>
+<li>用文本编辑器打开ssh.pub文件，拷贝其中的内容，添加到github的用户<a href="https://github.com/settings/ssh" target="_blank" rel="external">ssh key 设置</a></li>
+</ul>
+<p>测试生效<br><code>ssh -T git@github.com</code></p>
+<h3 id="域名解析">域名解析</h3>
+<pre><code>域名：[<span class="link_label">name.com</span>](<span class="link_url">https://name.com</span>)注册、购买
+域名解析：[<span class="link_label">DNSPOD</span>](<span class="link_url">https://www.dnspod.cn</span>) 注册，填写。
+创建A记录，指向解析的IP：
+192.30.252.153
+192.30.252.154
+</code></pre><p>【<a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/" target="_blank" rel="external">解释说明—github pages help</a>】<br><strong>吐槽：之前将weixueshi.com加入 万网的购物车，一直没有购买，结果再去直接被注册了。在想：如果是个人，为什么没有早注册；问题迎刃而解：万网注册的。</strong></p>
+<ul>
+<li><p>在Github仓库中创建 CNAME文件，写入 <code>your-domain.com</code></p>
+</li>
+<li><p>隔一段时间（0-10min）查看下 <a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a> ，如果没有自动跳转到 your-domain.com说明 CNAME设置出错。</p>
+</li>
+</ul>
+<p>至此，结束。</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2014/12/02/markdownformat/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+          <li class="next disabled"><a>Next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3" >
+<div style="position: fixed;"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Dec 2 2014 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/记录/">记录<span>2</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/hexo/">hexo<span>2</span></a></li> <li><a href="/tags/本站/">本站<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#博客架构"><span class="toc-article-text">博客架构</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#hexo"><span class="toc-article-text">hexo</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#搭建环境"><span class="toc-article-text">搭建环境</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#搭建博客"><span class="toc-article-text">搭建博客</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#部署到Github"><span class="toc-article-text">部署到Github</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#设置ssh"><span class="toc-article-text">设置ssh</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#域名解析"><span class="toc-article-text">域名解析</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	</div>
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2014 wxuei
+  
+      
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+   </html>
